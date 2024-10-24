@@ -1,0 +1,128 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('image3.jpg');
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Add padding around the body */
+}
+
+/* Container for the form */
+.container {
+    background-color:transparent;
+    backdrop-filter: blur(20px); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px #283350;
+    width: 400px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+/* Header Styles */
+h2 {
+    text-align: center;
+    color:orangered ; /* Teal color for contrast */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Dark grey for labels */
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff; /* White background for inputs */
+    color: #333; /* Dark text for inputs */
+    transition: border-color 0.3s;
+}
+
+/* Specific input styles for focus and errors */
+form input:focus {
+    border-color: #00796b; /* Teal border on focus */
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    display: none;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.error-border {
+    border-color: red; /* Red border on error */
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #81d4fa; /* Light blue background for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4fc3f7; /* Slightly darker blue on hover */
+}
+
+/* Success Message Styles */
+#successMessage {
+    display: none;
+    text-align: center;
+    color: #4caf50; /* Bright green for success message */
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Already Registered Text Styles */
+#alreadyRegistered {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#alreadyRegistered a {
+    color: #00796b; /* Teal link color */
+    text-decoration: none;
+}
+
+#alreadyRegistered a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
